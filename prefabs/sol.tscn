@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/sol.gd" type="Script" id=1]
+[ext_resource path="res://assets/png-clipart-light-white-rgb-color-model-blue-real-sun-bright-ball-purple-texture.png" type="Texture" id=2]
+
+[node name="sol" type="Position2D"]
+position = Vector2( 90, 96 )
+script = ExtResource( 1 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -81, -42 )
+texture = ExtResource( 2 )
+texture_scale = 0.02
+color = Color( 1, 0.866667, 0, 1 )
+energy = 7.18
+shadow_enabled = true
